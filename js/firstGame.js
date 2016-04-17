@@ -29,15 +29,23 @@ $(document).ready(function () {
     $("body").delegate(".raceChoiceNo", "click", function () {
         $("body").append("<div><h3>Oh no! Bieber shakes his head and sings 'I set a pace, so I can race without pacing.'</h3></div>");
     });
+
+
+
+
+    $("body").append("<div><h3>Adventurer, on a gradient existing between the numbers 1 and 10, 1 being akin to a filthy, worthless, conniving harlot not fit for even the most low-born, common man, and 10 being akin to a virginal woman of high birth and possessing the promise of a sizable dowery upon your taking her to your wedding bed, how mighteth thou praiseth this offering of entertainment?</h3></div>");
+    $("body").append("<input type='text' class='rating'/><button class='ratingButton'>Render ye rating!</button>");
+    $("body").delegate(".ratingButton", "click", function () {
+        var rating = $(".rating") / val();
+        if (rating < 8) {
+            $("body").append("<div><h3>Gratitude, Adventurer! We shall continue our work to improve your experience on your next journey.</h3></div>");
+        } else if (rating <= 10) {
+            $("body").append("<div><h3>Gratitude, Adventurer! We find great inspiration in the enjoyment of thee!</h3></div>");
+        } else {
+            $("body").append("<div><h3>What sorcery is this? Adventurer, please input a whole number!</h3></div>")
+        };
+
+    });
+
 });
 
-
-/*
-
- var feedback = prompt("Adventurer, on a gradient existing between the numbers 1 and 10, 1 being akin to a filthy, worthless, conniving harlot not fit for even the most low-born, common man, and 10 being akin to a virginal woman of high birth and possessing the promise of a sizable dowery upon your taking her to your wedding bed, how mighteth thou praiseth this offering of entertainment?");
-
- if ( feedback > 8 ) {
- console.log("Thank you! We should race at the next concert!")
- } else {
- console.log("I'll keep practicing coding and racing.")
- }*/
